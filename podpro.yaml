@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: index-wep-app
+spec:
+  containers:
+    - name: my-nginx-app-index
+      image: amrayyad/pro
+      imagePullPolicy: IfNotPresent
+      ports: 
+        - containerPort: 80
